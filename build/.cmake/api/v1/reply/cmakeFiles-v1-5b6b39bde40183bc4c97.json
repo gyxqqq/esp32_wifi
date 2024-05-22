@@ -289,6 +289,20 @@
 			"path" : "D:/programfiles/Espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/Compiler/GNU.cmake"
 		},
 		{
+			"path" : ".git/HEAD"
+		},
+		{
+			"isExternal" : true,
+			"path" : "D:/programfiles/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/git-data/grabRef.cmake"
+		},
+		{
+			"path" : ".git/refs/heads/main"
+		},
+		{
 			"isExternal" : true,
 			"path" : "D:/programfiles/esp-idf/tools/kconfig_new/config.env.in"
 		},

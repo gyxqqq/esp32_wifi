@@ -543,11 +543,11 @@
 		},
 		{
 			"backtrace" : 5,
-			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
 		},
 		{
 			"backtrace" : 5,
-			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
 		},
 		{
 			"backtrace" : 5,

@@ -1709,7 +1709,7 @@
 				{
 					"directoryIndex" : 14,
 					"id" : "__idf_esp_app_format::@08c2bdce7fd85cdbea06",
-					"jsonFile" : "target-__idf_esp_app_format-Debug-9398be5ddda431b9a221.json",
+					"jsonFile" : "target-__idf_esp_app_format-Debug-a6fd5e462e54720bf485.json",
 					"name" : "__idf_esp_app_format",
 					"projectIndex" : 1
 				},
@@ -1793,7 +1793,7 @@
 				{
 					"directoryIndex" : 70,
 					"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef",
-					"jsonFile" : "target-__idf_esp_local_ctrl-Debug-aeca411bfa9a1f851334.json",
+					"jsonFile" : "target-__idf_esp_local_ctrl-Debug-f903e6e096db8918853e.json",
 					"name" : "__idf_esp_local_ctrl",
 					"projectIndex" : 1
 				},
@@ -1877,7 +1877,7 @@
 				{
 					"directoryIndex" : 74,
 					"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7",
-					"jsonFile" : "target-__idf_fatfs-Debug-72b62d1a645656deb402.json",
+					"jsonFile" : "target-__idf_fatfs-Debug-b5b88f39e68a1b20da6d.json",
 					"name" : "__idf_fatfs",
 					"projectIndex" : 1
 				},
@@ -1933,7 +1933,7 @@
 				{
 					"directoryIndex" : 85,
 					"id" : "__idf_main::@7368607ed66887415643",
-					"jsonFile" : "target-__idf_main-Debug-89145303137ec2f47771.json",
+					"jsonFile" : "target-__idf_main-Debug-871d40d212624b97beb7.json",
 					"name" : "__idf_main",
 					"projectIndex" : 1
 				},
@@ -1982,7 +1982,7 @@
 				{
 					"directoryIndex" : 69,
 					"id" : "__idf_protocomm::@d76d01c8dec06205e1fc",
-					"jsonFile" : "target-__idf_protocomm-Debug-ba47e0b8294d593b15fa.json",
+					"jsonFile" : "target-__idf_protocomm-Debug-ed74e2bd5aef0c1a3f6f.json",
 					"name" : "__idf_protocomm",
 					"projectIndex" : 1
 				},
@@ -2052,7 +2052,7 @@
 				{
 					"directoryIndex" : 84,
 					"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098",
-					"jsonFile" : "target-__idf_wifi_provisioning-Debug-a6ee9a7a88f5f32b5b06.json",
+					"jsonFile" : "target-__idf_wifi_provisioning-Debug-2e0d6fc3e142a79bbe35.json",
 					"name" : "__idf_wifi_provisioning",
 					"projectIndex" : 1
 				},
@@ -2073,7 +2073,7 @@
 				{
 					"directoryIndex" : 24,
 					"id" : "__ldgen_output_sections.ld::@874df54e61e20112dfd4",
-					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-2dcfccc12d9d7643e433.json",
+					"jsonFile" : "target-__ldgen_output_sections.ld-Debug-453a9d22a333a3573dc7.json",
 					"name" : "__ldgen_output_sections.ld",
 					"projectIndex" : 1
 				},
@@ -2234,7 +2234,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hello_world.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello_world.elf-Debug-fca56732556621ce0d4c.json",
+					"jsonFile" : "target-hello_world.elf-Debug-db28c1bbc6ffac823ace.json",
 					"name" : "hello_world.elf",
 					"projectIndex" : 0
 				},

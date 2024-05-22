@@ -55,18 +55,6 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 354,
-				"parent" : 3
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 339,
-				"parent" : 4
-			},
-			{
-				"command" : 3,
-				"file" : 0,
 				"line" : 357,
 				"parent" : 3
 			},
@@ -74,13 +62,25 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 336,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 354,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
 				"parent" : 6
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 336,
-				"parent" : 6
+				"parent" : 4
 			},
 			{
 				"command" : 5,
@@ -110,7 +110,7 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 336,
-				"parent" : 6
+				"parent" : 4
 			},
 			{
 				"command" : 8,
@@ -176,13 +176,13 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 336,
-				"parent" : 6
+				"parent" : 4
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 336,
-				"parent" : 6
+				"parent" : 4
 			}
 		]
 	},
@@ -493,59 +493,59 @@
 					"path" : "D:/programfiles/esp-idf/components/lwip/port/esp32xx/include/arch"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/include/esp32/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/common/osi/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/common/api/include/api"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/common/btc/profile/esp/blufi/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/common/btc/profile/esp/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/host/bluedroid/api/include/api"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/bt/porting/ext/tinycrypt/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_timer/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_wifi/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_wifi/wifi_apps/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_event/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_phy/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_phy/esp32/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"path" : "D:/programfiles/esp-idf/components/esp_netif/include"
 				},
 				{
@@ -581,11 +581,11 @@
 					"path" : "D:/programfiles/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"path" : "D:/programfiles/esp-idf/components/console"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"path" : "D:/programfiles/esp-idf/components/vfs/include"
 				},
 				{
@@ -726,11 +726,11 @@
 		},
 		{
 			"backtrace" : 5,
-			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
 		},
 		{
 			"backtrace" : 7,
-			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
 		},
 		{
 			"backtrace" : 8,

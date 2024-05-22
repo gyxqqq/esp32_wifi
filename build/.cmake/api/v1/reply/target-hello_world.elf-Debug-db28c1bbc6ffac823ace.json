@@ -1597,6 +1597,14 @@
 			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
 		},
 		{
+			"backtrace" : 47,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
 			"backtrace" : 45,
 			"id" : "__idf_unity::@fec746937506b5690992"
 		},
@@ -1605,12 +1613,8 @@
 			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
 		},
 		{
-			"backtrace" : 47,
-			"id" : "__idf_console::@4311ed8d271cc0ee1422"
-		},
-		{
-			"backtrace" : 46,
-			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+			"backtrace" : 53,
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
 		},
 		{
 			"backtrace" : 58,
@@ -1625,28 +1629,24 @@
 			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
 		},
 		{
-			"backtrace" : 53,
-			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
-		},
-		{
-			"backtrace" : 64,
-			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
-		},
-		{
-			"backtrace" : 61,
-			"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef"
-		},
-		{
-			"backtrace" : 65,
-			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
-		},
-		{
 			"backtrace" : 63,
 			"id" : "__idf_wear_levelling::@cb21b0d7c0815cff11c6"
 		},
 		{
 			"backtrace" : 62,
 			"id" : "__idf_espcoredump::@718b9a7d55ab42cfc0a3"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef"
+		},
+		{
+			"backtrace" : 64,
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"backtrace" : 65,
+			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
 		},
 		{
 			"backtrace" : 66,
@@ -1665,12 +1665,12 @@
 			"id" : "__idf_spiffs::@df881b71474064c86689"
 		},
 		{
-			"backtrace" : 71,
-			"id" : "__idf_main::@7368607ed66887415643"
-		},
-		{
 			"backtrace" : 70,
 			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "__idf_main::@7368607ed66887415643"
 		}
 	],
 	"id" : "hello_world.elf::@6890427a1f51a3e7e1df",
