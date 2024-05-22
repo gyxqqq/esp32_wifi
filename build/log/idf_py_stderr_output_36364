@@ -1,0 +1,88 @@
+[0;33m--- esp-idf-monitor 1.4.0 on com3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400813bc: call_start_cpu1 at D:/programfiles/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+[0m
+[0;33m0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081a9e: panic_abort at D:/programfiles/esp-idf/components/esp_system/panic.c:452
+0x40089f49: esp_system_abort at D:/programfiles/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090f26: abort at D:/programfiles/esp-idf/components/newlib/abort.c:38
+0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+0x400d5dbd: app_main at D:/projects/esp32/hello_world/main/hello_world_main.c:30
+0x4014f903: main_task at D:/programfiles/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008c819: vPortTaskWrapper at D:/programfiles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400813bc: call_start_cpu1 at D:/programfiles/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+[0m
+[0;33m0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081a9e: panic_abort at D:/programfiles/esp-idf/components/esp_system/panic.c:452
+0x40089f49: esp_system_abort at D:/programfiles/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090f26: abort at D:/programfiles/esp-idf/components/newlib/abort.c:38
+0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+0x400d5dbd: app_main at D:/projects/esp32/hello_world/main/hello_world_main.c:30
+0x4014f903: main_task at D:/programfiles/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008c819: vPortTaskWrapper at D:/programfiles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400813bc: call_start_cpu1 at D:/programfiles/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+[0m
+[0;33m0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081a9e: panic_abort at D:/programfiles/esp-idf/components/esp_system/panic.c:452
+0x40089f49: esp_system_abort at D:/programfiles/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090f26: abort at D:/programfiles/esp-idf/components/newlib/abort.c:38
+0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+0x400d5dbd: app_main at D:/projects/esp32/hello_world/main/hello_world_main.c:30
+0x4014f903: main_task at D:/programfiles/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008c819: vPortTaskWrapper at D:/programfiles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400813bc: call_start_cpu1 at D:/programfiles/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+[0m
+[0;33m0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081a9e: panic_abort at D:/programfiles/esp-idf/components/esp_system/panic.c:452
+0x40089f49: esp_system_abort at D:/programfiles/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090f26: abort at D:/programfiles/esp-idf/components/newlib/abort.c:38
+0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+0x400d5dbd: app_main at D:/projects/esp32/hello_world/main/hello_world_main.c:30
+0x4014f903: main_task at D:/programfiles/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008c819: vPortTaskWrapper at D:/programfiles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400813bc: call_start_cpu1 at D:/programfiles/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+[0m
+[0;33m0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081a9e: panic_abort at D:/programfiles/esp-idf/components/esp_system/panic.c:452
+0x40089f49: esp_system_abort at D:/programfiles/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x40090f26: abort at D:/programfiles/esp-idf/components/newlib/abort.c:38
+0x40089f3f: _esp_error_check_failed at D:/programfiles/esp-idf/components/esp_system/esp_err.c:50
+0x400de4fd: esp_netif_create_default_wifi_sta at D:/programfiles/esp-idf/components/esp_wifi/src/wifi_default.c:391 (discriminator 1)
+0x400d5dbd: app_main at D:/projects/esp32/hello_world/main/hello_world_main.c:30
+0x4014f903: main_task at D:/programfiles/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008c819: vPortTaskWrapper at D:/programfiles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m
