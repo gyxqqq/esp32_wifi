@@ -14,10 +14,56 @@
 #include "../build/config/sdkconfig.h"
 #include "esp_wifi.h"
 #include "nvs_flash.h"
-#include "esp_task_wdt.h"
-#include "esp_netif.h"
-#include "esp_http_client.h"
 
+#include "esp_netif.h"
+#include "lwip/ip_addr.h"
+#include "mqtt_client.h"
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
+{
+  
+    esp_mqtt_event_handle_t event = event_data;
+    esp_mqtt_client_handle_t client = event->client;
+    int msg_id;
+    switch ((esp_mqtt_event_id_t)event_id) {
+    case MQTT_EVENT_CONNECTED:
+        printf("MQTT_EVENT_CONNECTED\n");
+        msg_id = esp_mqtt_client_publish(client, "/topic/qos1", "data_3", 0, 1, 0);
+        printf("sent publish successful, msg_id=%d\n", msg_id);
+
+        msg_id = esp_mqtt_client_subscribe(client, "/topic/qos0", 0);
+        printf("sent subscribe successful, msg_id=%d\n", msg_id);
+
+        msg_id = esp_mqtt_client_subscribe(client, "/topic/qos1", 1);
+        printf("sent subscribe successful, msg_id=%d\n", msg_id);
+        break;
+    case MQTT_EVENT_DISCONNECTED:
+        printf("MQTT_EVENT_DISCONNECTED\n");
+        break;
+
+    case MQTT_EVENT_SUBSCRIBED:
+        printf("MQTT_EVENT_SUBSCRIBED, msg_id=%d\n", event->msg_id);
+        break;
+    case MQTT_EVENT_UNSUBSCRIBED:
+        printf("MQTT_EVENT_UNSUBSCRIBED, msg_id=%d\n", event->msg_id);
+        break;
+    case MQTT_EVENT_PUBLISHED:
+        printf("MQTT_EVENT_PUBLISHED, msg_id=%d\n", event->msg_id);
+        break;
+    case MQTT_EVENT_DATA:
+        printf("MQTT_EVENT_DATA\n");
+        printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
+        printf("DATA=%.*s\r\n", event->data_len, event->data);
+
+        break;
+    case MQTT_EVENT_ERROR:
+        printf("MQTT_EVENT_ERROR\n");
+        
+        break;
+    default:
+        printf("Other event id:%ld\n", event_id);
+        break;
+    }
+}
 void app_main(void)
 {
     printf("Hello world!\n");
@@ -33,7 +79,7 @@ void app_main(void)
     IP4_ADDR(&dns_info.ip.u_addr.ip4, 8, 8, 8, 8); // Google 的公共 DNS 服务器 8.8.8.8
     dns_info.ip.type = IPADDR_TYPE_V4;
     esp_netif_set_dns_info(esp_netif_get_handle_from_ifkey("WIFI_STA_DEF"), ESP_NETIF_DNS_MAIN, &dns_info);
-    
+
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     esp_err_t ret = esp_wifi_init(&cfg);
     if (ret != ESP_OK)
@@ -76,7 +122,18 @@ void app_main(void)
         printf("wifi connect failed\n");
         printf("Error: %s\n", esp_err_to_name(err));
     }
-    /* Print chip information */
+
+const esp_mqtt_client_config_t mqtt_cfg = {
+    .broker.address.uri = "mqtt://jzitan.top:1883",
+    .credentials.client_id = "esp32",
+};
+
+    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);
+    esp_mqtt_client_start(client);
+    //mqtt connect
+    esp_mqtt_client_subscribe(client, "test", 1);
+    esp_mqtt_client_publish(client, "test", "hello", 0, 1, 0);
 
     for (int i = 10000; i >= 0; i--)
     {
