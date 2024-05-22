@@ -1,0 +1,36 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/projects/esp32/hello_world/sdkconfig
+-- App "hello_world" version: 80bd4a9-dirty
+-- Adding linker script D:/projects/esp32/hello_world/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/programfiles/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/programfiles/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/programfiles/esp-idf/components/app_trace D:/programfiles/esp-idf/components/app_update D:/programfiles/esp-idf/components/bootloader D:/programfiles/esp-idf/components/bootloader_support D:/programfiles/esp-idf/components/bt D:/programfiles/esp-idf/components/cmock D:/programfiles/esp-idf/components/console D:/programfiles/esp-idf/components/cxx D:/programfiles/esp-idf/components/driver D:/programfiles/esp-idf/components/efuse D:/programfiles/esp-idf/components/esp-tls D:/programfiles/esp-idf/components/esp_adc D:/programfiles/esp-idf/components/esp_app_format D:/programfiles/esp-idf/components/esp_coex D:/programfiles/esp-idf/components/esp_common D:/programfiles/esp-idf/components/esp_eth D:/programfiles/esp-idf/components/esp_event D:/programfiles/esp-idf/components/esp_gdbstub D:/programfiles/esp-idf/components/esp_hid D:/programfiles/esp-idf/components/esp_http_client D:/programfiles/esp-idf/components/esp_http_server D:/programfiles/esp-idf/components/esp_https_ota D:/programfiles/esp-idf/components/esp_https_server D:/programfiles/esp-idf/components/esp_hw_support D:/programfiles/esp-idf/components/esp_lcd D:/programfiles/esp-idf/components/esp_local_ctrl D:/programfiles/esp-idf/components/esp_mm D:/programfiles/esp-idf/components/esp_netif D:/programfiles/esp-idf/components/esp_netif_stack D:/programfiles/esp-idf/components/esp_partition D:/programfiles/esp-idf/components/esp_phy D:/programfiles/esp-idf/components/esp_pm D:/programfiles/esp-idf/components/esp_psram D:/programfiles/esp-idf/components/esp_ringbuf D:/programfiles/esp-idf/components/esp_rom D:/programfiles/esp-idf/components/esp_system D:/programfiles/esp-idf/components/esp_timer D:/programfiles/esp-idf/components/esp_wifi D:/programfiles/esp-idf/components/espcoredump D:/programfiles/esp-idf/components/esptool_py D:/programfiles/esp-idf/components/fatfs D:/programfiles/esp-idf/components/freertos D:/programfiles/esp-idf/components/hal D:/programfiles/esp-idf/components/heap D:/programfiles/esp-idf/components/http_parser D:/programfiles/esp-idf/components/idf_test D:/programfiles/esp-idf/components/ieee802154 D:/programfiles/esp-idf/components/json D:/programfiles/esp-idf/components/log D:/programfiles/esp-idf/components/lwip D:/projects/esp32/hello_world/main D:/programfiles/esp-idf/components/mbedtls D:/programfiles/esp-idf/components/mqtt D:/programfiles/esp-idf/components/newlib D:/programfiles/esp-idf/components/nvs_flash D:/programfiles/esp-idf/components/openthread D:/programfiles/esp-idf/components/partition_table D:/programfiles/esp-idf/components/perfmon D:/programfiles/esp-idf/components/protobuf-c D:/programfiles/esp-idf/components/protocomm D:/programfiles/esp-idf/components/pthread D:/programfiles/esp-idf/components/sdmmc D:/programfiles/esp-idf/components/soc D:/programfiles/esp-idf/components/spi_flash D:/programfiles/esp-idf/components/spiffs D:/programfiles/esp-idf/components/tcp_transport D:/programfiles/esp-idf/components/ulp D:/programfiles/esp-idf/components/unity D:/programfiles/esp-idf/components/usb D:/programfiles/esp-idf/components/vfs D:/programfiles/esp-idf/components/wear_levelling D:/programfiles/esp-idf/components/wifi_provisioning D:/programfiles/esp-idf/components/wpa_supplicant D:/programfiles/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/projects/esp32/hello_world/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\projects\esp32\hello_world\build\bootloader\esp-idf\esptool_py && D:\programfiles\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/programfiles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/projects/esp32/hello_world/build/bootloader/bootloader.bin"
+Bootloader binary size 0x63a0 bytes. 0xc60 bytes (11%) free.
+[2/9] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/9] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable hello_world.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/projects/esp32/hello_world/build/hello_world.bin
+[9/9] cmd.exe /C "cd /D D:\projects\esp32\hello_world\build\esp-idf\esptool_py && D:\programfiles\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/programfiles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/projects/esp32/hello_world/build/partition_table/partition-table.bin D:/projects/esp32/hello_world/build/hello_world.bin"
+hello_world.bin binary size 0xbd560 bytes. Smallest app partition is 0x100000 bytes. 0x42aa0 bytes (26%) free.
