@@ -5,7 +5,8 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/**",
-                "D:\\programfiles\\Espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\**"
+                "D:\\programfiles\\Espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\**",
+                "D:/programfiles/esp-idf/components/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -25,6 +26,7 @@
                 "${workspaceFolder}/**",
                 "D:\\programfiles\\Espressif\\tools\\xtensa-esp32-elf\\esp-12.2.0_20230208\\xtensa-esp32-elf\\xtensa-esp32-elf\\include\\**",
                 "D:/programfiles/esp-idf/components/**"
+
             ],
             "defines": [
                 "_DEBUG",
