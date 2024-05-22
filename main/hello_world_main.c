@@ -23,12 +23,8 @@ void app_main(void)
     esp_netif_init();
     esp_event_loop_create_default();
     // config
-    esp_netif_t *sta_netif = esp_netif_get_handle_from_ifkey("WIFI_STA_DEF");
-    if (sta_netif != NULL)
-    {
-        esp_netif_destroy(sta_netif);
-    }
-    sta_netif = esp_netif_create_default_wifi_sta();
+
+    esp_netif_t *sta_netif = esp_netif_create_default_wifi_sta();
 
     esp_netif_set_hostname(sta_netif, "esp32");
 

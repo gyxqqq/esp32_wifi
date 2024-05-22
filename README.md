@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# esp32_wifi
-esp32_wifi_test
-=======
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- |
 
@@ -55,4 +51,3 @@ Please use the following feedback channels:
 * For a feature request or bug report, create a [GitHub issue](https://github.com/espressif/esp-idf/issues)
 
 We will get back to you as soon as possible.
->>>>>>> 8a0d907 (init)
