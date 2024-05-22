@@ -1,4 +1,5 @@
 # esp32wifi
+基于ESP-IDF5.1.0
 ## ESP32 WiFi
 ### 初始化流程
 ```c
