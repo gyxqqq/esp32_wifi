@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"esp_flash.h": "c",
+			"esp_chip_info.h": "c",
+			"stdbool.h": "c"
+		}
+	}
+}

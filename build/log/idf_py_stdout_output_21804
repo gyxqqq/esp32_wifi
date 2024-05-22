@@ -1,0 +1,69 @@
+[1/5] cmd.exe /C "cd /D D:\projects\esp32\hello_world\build\esp-idf\esptool_py && D:\programfiles\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/programfiles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/projects/esp32/hello_world/build/partition_table/partition-table.bin D:/projects/esp32/hello_world/build/hello_world.bin"
+hello_world.bin binary size 0xb7550 bytes. Smallest app partition is 0x100000 bytes. 0x48ab0 bytes (28%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\projects\esp32\hello_world\build\bootloader\esp-idf\esptool_py && D:\programfiles\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/programfiles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/projects/esp32/hello_world/build/bootloader/bootloader.bin"
+Bootloader binary size 0x63a0 bytes. 0xc60 bytes (11%) free.
+[2/3] cmd.exe /C "cd /D D:\programfiles\esp-idf\components\esptool_py && D:\programfiles\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/programfiles/esp-idf -D SERIAL_TOOL=D:/programfiles/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/programfiles/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/projects/esp32/hello_world/build -P D:/programfiles/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p com3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port com3
+Connecting...
+Failed to get PID of a device on com3, using standard reset sequence.
+..
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:64:c9:86:51:e8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c7fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 25504 bytes to 16127...
+Writing at 0x00001000... (100 %)
+Wrote 25504 bytes (16127 compressed) at 0x00001000 in 0.7 seconds (effective 287.3 kbit/s)...
+Hash of data verified.
+Compressed 750928 bytes to 483789...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001adeb... (6 %)
+Writing at 0x000232e7... (10 %)
+Writing at 0x000282d3... (13 %)
+Writing at 0x000319da... (16 %)
+Writing at 0x000371ae... (20 %)
+Writing at 0x0003cbf4... (23 %)
+Writing at 0x000426c7... (26 %)
+Writing at 0x00048183... (30 %)
+Writing at 0x0004d3e7... (33 %)
+Writing at 0x0005278a... (36 %)
+Writing at 0x00057c7d... (40 %)
+Writing at 0x0005d0a4... (43 %)
+Writing at 0x000627ec... (46 %)
+Writing at 0x00068005... (50 %)
+Writing at 0x0006ddbf... (53 %)
+Writing at 0x00073340... (56 %)
+Writing at 0x000789f7... (60 %)
+Writing at 0x0007e061... (63 %)
+Writing at 0x00083b16... (66 %)
+Writing at 0x000893ff... (70 %)
+Writing at 0x0008f5d6... (73 %)
+Writing at 0x00094f8f... (76 %)
+Writing at 0x0009cb02... (80 %)
+Writing at 0x000a5a26... (83 %)
+Writing at 0x000ab526... (86 %)
+Writing at 0x000b3c8e... (90 %)
+Writing at 0x000b95fa... (93 %)
+Writing at 0x000bf2b3... (96 %)
+Writing at 0x000c44a4... (100 %)
+Wrote 750928 bytes (483789 compressed) at 0x00010000 in 11.0 seconds (effective 547.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 672.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

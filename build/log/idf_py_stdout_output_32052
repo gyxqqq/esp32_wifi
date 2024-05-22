@@ -1,0 +1,323 @@
+�x�xx�x���x�ɍ��..�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:14504
+load:0x40080400,len:4
+load:0x40080404,len:3812
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 21 2024 23:02:37[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a8b4h (108724) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8dc vaddr=3ffbdb60 size=0529ch ( 21148) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002fb80 vaddr=40080000 size=00498h (  1176) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6b218h (438808) map[0m
+[0;32mI (317) esp_image: segment 4: paddr=0009b240 vaddr=40080498 size=16964h ( 92516) load[0m
+[0;32mI (367) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (367) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Multicore app[0m
+[0;32mI (379) cpu_start: Pro cpu up.[0m
+[0;32mI (379) cpu_start: Starting app cpu, entry point is 0x400813b0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (397) cpu_start: Pro cpu start user code[0m
+[0;32mI (397) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) cpu_start: Application information:[0m
+[0;32mI (402) cpu_start: Project name:     hello_world[0m
+[0;32mI (407) cpu_start: App version:      1[0m
+[0;32mI (411) cpu_start: Compile time:     May 21 2024 23:02:17[0m
+[0;32mI (417) cpu_start: ELF file SHA256:  c6de389aa86c2c2c...[0m
+[0;32mI (423) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (428) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (433) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (438) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (443) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (450) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (456) heap_init: At 3FFC64D0 len 00019B30 (102 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 40096DFC len 00009204 (36 KiB): IRAM[0m
+[0;32mI (483) spi_flash: detected chip: generic[0m
+[0;32mI (486) spi_flash: flash io: dio[0m
+[0;33mW (490) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (504) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (509) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (513) app_start: Starting scheduler on CPU1[0m
+I (513) main_task: Started on CPU0[0m
+[0;32mI (523) main_task: Calling app_main()[0m
+Hello world!
+I (563) wifi:wifi driver task: 3ffb595c, prio:23, stack:6656, core=0
+I (573) wifi:wifi firmware version: 91b9630
+I (583) wifi:wifi certification version: v7.0
+I (583) wifi:config NVS flash: enabled
+I (583) wifi:config nano formating: disabled
+I (583) wifi:Init data frame dynamic rx buffer num: 32
+I (583) wifi:Init static rx mgmt buffer num: 5
+I (593) wifi:Init management short buffer num: 32
+I (593) wifi:Init dynamic tx buffer num: 32
+I (603) wifi:Init static rx buffer size: 1600
+I (603) wifi:Init static rx buffer num: 10
+I (603) wifi:Init dynamic rx buffer num: 32
+[0;32mI (613) wifi_init: rx ba win: 6[0m
+[0;32mI (613) wifi_init: tcpip mbox: 32[0m
+[0;32mI (623) wifi_init: udp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp tx win: 5744[0m
+[0;32mI (633) wifi_init: tcp rx win: 5744[0m
+[0;32mI (633) wifi_init: tcp mss: 1440[0m
+[0;32mI (643) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (643) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (653) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (743) wifi:mode : sta (ec:64:c9:86:51:e8)
+I (743) wifi:enable tsf
+E (743) wifi:failed to post WiFi event=2 ret=259
+wifi init success
+wifi connect success
+This is esp32 chip with 2 CPU core(s), WiFi/BTBLE, silicon revision v3.1, 2MB external flash
+Minimum free heap size: 239456 bytes
+W (1753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (1753) wifi:sta is connecting, return error
+W (2753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (2753) wifi:sta is connecting, return error
+E (3163) wifi:failed to post WiFi event=5 ret=259
+W (3753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (4753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (4753) wifi:sta is connecting, return error
+W (5753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (5753) wifi:sta is connecting, return error
+E (6163) wifi:failed to post WiFi event=5 ret=259
+W (6753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (7753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (7753) wifi:sta is connecting, return error
+W (8753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (8753) wifi:sta is connecting, return error
+E (9163) wifi:failed to post WiFi event=5 ret=259
+W (9753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (10753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (10753) wifi:sta is connecting, return error
+W (11753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (11753) wifi:sta is connecting, return error
+E (12163) wifi:failed to post WiFi event=5 ret=259
+W (12753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (13753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (13753) wifi:sta is connecting, return error
+W (14753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (14753) wifi:sta is connecting, return error
+E (15163) wifi:failed to post WiFi event=5 ret=259
+W (15753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (16753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (16753) wifi:sta is connecting, return error
+W (17753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (17753) wifi:sta is connecting, return error
+E (18163) wifi:failed to post WiFi event=5 ret=259
+W (18753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (19753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (19753) wifi:sta is connecting, return error
+W (20753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (20753) wifi:sta is connecting, return error
+E (21163) wifi:failed to post WiFi event=5 ret=259
+W (21753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (22753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (22753) wifi:sta is connecting, return error
+W (23753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (23753) wifi:sta is connecting, return error
+E (24163) wifi:failed to post WiFi event=5 ret=259
+W (24753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (25753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (25753) wifi:sta is connecting, return error
+W (26753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (26753) wifi:sta is connecting, return error
+E (27163) wifi:failed to post WiFi event=5 ret=259
+W (27753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (28753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (28753) wifi:sta is connecting, return error
+W (29753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (29753) wifi:sta is connecting, return error
+E (30163) wifi:failed to post WiFi event=5 ret=259
+W (30753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (31753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (31753) wifi:sta is connecting, return error
+W (32753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (32753) wifi:sta is connecting, return error
+E (33163) wifi:failed to post WiFi event=5 ret=259
+W (33753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (34753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (34753) wifi:sta is connecting, return error
+W (35753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (35753) wifi:sta is connecting, return error
+E (36163) wifi:failed to post WiFi event=5 ret=259
+W (36753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (37753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (37753) wifi:sta is connecting, return error
+W (38753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (38753) wifi:sta is connecting, return error
+E (39163) wifi:failed to post WiFi event=5 ret=259
+W (39753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (40753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (40753) wifi:sta is connecting, return error
+W (41753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (41753) wifi:sta is connecting, return error
+E (42163) wifi:failed to post WiFi event=5 ret=259
+W (42753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (43753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (43753) wifi:sta is connecting, return error
+W (44753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (44753) wifi:sta is connecting, return error
+E (45163) wifi:failed to post WiFi event=5 ret=259
+W (45753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (46753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (46753) wifi:sta is connecting, return error
+W (47753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (47753) wifi:sta is connecting, return error
+E (48163) wifi:failed to post WiFi event=5 ret=259
+W (48753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (49753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (49753) wifi:sta is connecting, return error
+W (50753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (50753) wifi:sta is connecting, return error
+E (51163) wifi:failed to post WiFi event=5 ret=259
+W (51753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (52753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (52753) wifi:sta is connecting, return error
+W (53753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (53753) wifi:sta is connecting, return error
+E (54163) wifi:failed to post WiFi event=5 ret=259
+W (54753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (55753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (55753) wifi:sta is connecting, return error
+W (56753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (56753) wifi:sta is connecting, return error
+E (57163) wifi:failed to post WiFi event=5 ret=259
+W (57753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+W (58753) wifi:Haven't to connect to a suitable AP now!
+wifi connect failed
+Error: ESP_ERR_WIFI_NOT_CONNECT
+E (58753) wifi:sta is connecting, return error

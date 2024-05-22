@@ -1,0 +1,4959 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:14504
+load:0x40080400,len:4
+load:0x40080404,len:3812
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 21 2024 23:02:37[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f50ch (128268) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f534 vaddr=3ffbdb60 size=00ae4h (  2788) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=81db0h (531888) map[0m
+[0;32mI (347) esp_image: segment 3: paddr=000b1dd8 vaddr=3ffbe644 size=047c8h ( 18376) load[0m
+[0;32mI (354) esp_image: segment 4: paddr=000b65a8 vaddr=40080000 size=16fa4h ( 94116) load[0m
+[0;32mI (405) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (417) cpu_start: Pro cpu up.[0m
+[0;32mI (417) cpu_start: Starting app cpu, entry point is 0x400813c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     hello_world[0m
+[0;32mI (445) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     May 21 2024 23:02:17[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  1b14f48f55669a09...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFC6EE8 len 00019118 (100 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 40096FA4 len 0000905C (36 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (547) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (551) app_start: Starting scheduler on CPU1[0m
+mI (551) main_task: Started on CPU0[0m
+[0;32mI (561) main_task: Calling app_main()[0m
+Hello world!
+I (601) wifi:wifi driver task: 3ffb7f74, prio:23, stack:6656, core=0
+I (611) wifi:wifi firmware version: 91b9630
+I (621) wifi:wifi certification version: v7.0
+I (621) wifi:config NVS flash: enabled
+I (621) wifi:config nano formating: disabled
+I (621) wifi:Init data frame dynamic rx buffer num: 32
+I (621) wifi:Init static rx mgmt buffer num: 5
+I (631) wifi:Init management short buffer num: 32
+I (631) wifi:Init dynamic tx buffer num: 32
+I (641) wifi:Init static rx buffer size: 1600
+I (641) wifi:Init static rx buffer num: 10
+I (641) wifi:Init dynamic rx buffer num: 32
+[0;32mI (651) wifi_init: rx ba win: 6[0m
+[0;32mI (651) wifi_init: tcpip mbox: 32[0m
+[0;32mI (661) wifi_init: udp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp mbox: 6[0m
+[0;32mI (661) wifi_init: tcp tx win: 5744[0m
+[0;32mI (671) wifi_init: tcp rx win: 5744[0m
+[0;32mI (671) wifi_init: tcp mss: 1440[0m
+[0;32mI (681) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (681) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (801) wifi:mode : sta (ec:64:c9:86:51:e8)
+I (801) wifi:enable tsf
+wifi start success
+wifi connect success
+This is esp32 chip with 2 CPU core(s), WiFi/BTBLE, silicon revision v3.1, 2MB external flash
+Minimum free heap size: 227040 bytes
+I (821) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+I (821) wifi:state: init -> auth (b0)
+I (831) wifi:state: auth -> assoc (0)
+I (831) wifi:state: assoc -> run (10)
+I (881) wifi:connected with scugyx, aid = 3, channel 6, 40D, bssid = c2:8e:15:95:f6:23
+I (881) wifi:security: WPA2-PSK, phy: bgn, rssi: -18
+I (891) wifi:pm start, type: 1
+
+I (921) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+[0;32mI (2391) esp_netif_handlers: sta ip: 192.168.3.21, mask: 255.255.255.0, gw: 192.168.3.1[0m
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -26
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -26
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+I (47521) wifi:<ba-add>idx:0 (ifx:0, c2:8e:15:95:f6:23), tid:0, ssn:0, winSize:64
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -26
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -26
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -26
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -26
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -26
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -26
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -16
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -16
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -27
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -27
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -21
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -21
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -17
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -17
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -20
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -20
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -18
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -18
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
+wifi connect success
+SSID: scugyx
+RSSI: -19
+Primary channel: 6
+Secondary channel: 2
+Authmode: 3
+Pairwise cipher: 4
+Group cipher: 4
+Antenna: 0
+RSSI: -19
+Country code: 
+Country code: 0
+Country code: 0
+wifi connect success
