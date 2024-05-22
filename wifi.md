@@ -81,3 +81,7 @@ void app_main(void)
     esp_restart();
 }
 ```
+
+## esp32 http client
+### handler
+```c
