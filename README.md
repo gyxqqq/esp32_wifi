@@ -56,18 +56,6 @@ void app_main(void)
         {
             printf("wifi connect success\n");
             printf("SSID: %s\n", ap_info.ssid);
-            printf("RSSI: %d\n", ap_info.rssi);
-            printf("Primary channel: %d\n", ap_info.primary);
-            printf("Secondary channel: %d\n", ap_info.second);
-            printf("Authmode: %d\n", ap_info.authmode);
-            printf("Pairwise cipher: %d\n", ap_info.pairwise_cipher);
-            printf("Group cipher: %d\n", ap_info.group_cipher);
-            printf("Antenna: %d\n", ap_info.ant);
-            printf("RSSI: %d\n", ap_info.rssi);
-            printf("Country code: %s\n", ap_info.country.cc);
-            printf("Country code: %d\n", ap_info.country.schan);
-            printf("Country code: %d\n", ap_info.country.nchan);
-            printf("wifi connect success\n");
         }
         else
         {
