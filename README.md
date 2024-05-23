@@ -189,3 +189,143 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     }
 }
 ```
+## esp32 ble gatt server 蓝牙gatt服务端
+### ble gatt server config gatt服务端配置
+```c
+struct gatts_profile_inst
+{
+    esp_gatts_cb_t gatts_cb;
+    uint16_t gatts_if;
+    uint16_t app_id;
+    uint16_t conn_id;
+    uint16_t service_handle;
+    esp_gatt_srvc_id_t service_id;
+    uint16_t char_handle;
+    esp_bt_uuid_t char_uuid;
+    esp_gatt_perm_t perm;
+    esp_gatt_char_prop_t property;
+    uint16_t descr_handle;
+    esp_bt_uuid_t descr_uuid;
+}; // gatt服务端配置profile
+```
+### ble gatt server init gatt服务端初始化
+```c
+void gatts_profile_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
+esp_ble_gatts_register_callback(gatts_profile_event_handler); // 注册gatt事件处理函数
+esp_ble_gatts_app_register(PROFILE_APP_IDX); // 注册gatt应用
+```
+### ble gatt server event handler  gatt服务端事件处理
+```c
+void gatts_profile_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)
+{
+switch (event)
+    {
+    // Handle GATT Server events here
+    case ESP_GATTS_REG_EVT: // 注册事件
+    {
+        if (param->reg.status == ESP_GATT_OK)
+        {
+            gl_profile_tab[param->reg.app_id].gatts_if = gatts_if;
+        }
+        else
+        {
+            printf("Reg app failed, app_id %04x, status %d\n",
+                   param->reg.app_id,
+                   param->reg.status);
+            return;
+        }
+
+        gl_profile_tab[PROFILE_APP_IDX].service_id.is_primary = true;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.inst_id = 0x00; //设置service_id
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.len = ESP_UUID_LEN_128; 
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[0] = 0x12;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[1] = 0x34;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[2] = 0x56;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[3] = 0x78;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[4] = 0x90;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[5] = 0xAB;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[6] = 0xCD;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[7] = 0xEF;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[8] = 0x12;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[9] = 0x34;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[10] = 0x56;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[11] = 0x78;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[12] = 0x90;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[13] = 0xAB;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[14] = 0xCD;
+        gl_profile_tab[PROFILE_APP_IDX].service_id.id.uuid.uuid.uuid128[15] = 0xEF;
+
+        esp_err_t ret = esp_ble_gatts_create_service(gatts_if, &gl_profile_tab[PROFILE_APP_IDX].service_id, 4); //注意最后一个参数一定要够大，不然创建char会失败
+
+        break;
+    }
+    case ESP_GATTS_CREATE_EVT: // 创建事件
+    {
+
+        gl_profile_tab[PROFILE_APP_IDX].service_handle = param->create.service_handle;               // 获取service_handle
+        gl_profile_tab[PROFILE_APP_IDX].char_uuid.len = ESP_UUID_LEN_16;                             // 设置char_uuid
+        gl_profile_tab[PROFILE_APP_IDX].char_uuid.uuid.uuid16 = 0xFF03;                              // 设置char_uuid
+        esp_err_t ret = esp_ble_gatts_start_service(gl_profile_tab[PROFILE_APP_IDX].service_handle); // 启动service
+
+        esp_bt_uuid_t char_uuid = {
+            .len = ESP_UUID_LEN_16,
+            .uuid = {
+                .uuid16 = 0xFF01,
+            },
+        }; // 设置char_uuid
+        esp_gatt_char_prop_t property = ESP_GATT_CHAR_PROP_BIT_READ | ESP_GATT_CHAR_PROP_BIT_WRITE; // 设置char属性
+        esp_attr_control_t control = {
+            .auto_rsp = ESP_GATT_AUTO_RSP,
+        };
+        esp_gatt_perm_t perm = ESP_GATT_PERM_READ | ESP_GATT_PERM_WRITE; // 设置权限
+        uint8_t char_value[] = "Hello World!";
+
+        esp_attr_value_t attr_value = {
+            .attr_max_len = sizeof(char_value),
+            .attr_len = sizeof(char_value),
+            .attr_value = char_value,
+        };
+        ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_APP_IDX].service_handle,&char_uuid,perm,property,&attr_value,&control); // 添加char
+
+    }
+    case ESP_GATTS_START_EVT:
+    {
+        break;
+    }
+
+    case ESP_GATTS_ADD_CHAR_EVT:
+    {
+        uint16_t length = 0;
+        const uint8_t *prf_char;
+        gl_profile_tab[PROFILE_APP_IDX].char_handle = param->add_char.attr_handle;
+        gl_profile_tab[PROFILE_APP_IDX].descr_uuid.len = ESP_UUID_LEN_16;
+        gl_profile_tab[PROFILE_APP_IDX].descr_uuid.uuid.uuid16 = ESP_GATT_UUID_CHAR_CLIENT_CONFIG; // 设置char描述符uuid
+
+        esp_err_t ret = esp_ble_gatts_add_char_descr(gl_profile_tab[PROFILE_APP_IDX].service_handle, &gl_profile_tab[PROFILE_APP_IDX].descr_uuid, ESP_GATT_PERM_READ | ESP_GATT_PERM_WRITE, NULL, NULL); // 添加char描述符
+        break;
+    } 
+    case ESP_GATTS_ADD_CHAR_DESCR_EVT:
+    {
+        gl_profile_tab[PROFILE_APP_IDX].descr_handle = param->add_char_descr.attr_handle; // 获取描述符句柄
+        break;
+    }
+    case ESP_GATTS_CONNECT_EVT:
+    {
+        gl_profile_tab[PROFILE_APP_IDX].conn_id = param->connect.conn_id; // 获取连接id
+        break;
+    }
+    case ESP_GATTS_DISCONNECT_EVT:
+    {
+        gl_profile_tab[PROFILE_APP_IDX].conn_id = 0; // 断开连接
+        esp_ble_gap_start_advertising(&adv_params); // 开始广播
+
+        break;
+    }
+
+    default:
+        break;
+    }
+
+}
+```
+
