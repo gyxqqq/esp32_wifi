@@ -328,4 +328,58 @@ switch (event)
 
 }
 ```
-
+## esp32 lvgl lvgl图形化界面
+### lvgl 安装
+```powershell
+git clone https://github.com/lvgl/lv_port_esp32.git
+```
+将此目录下的components文件夹的子文件夹复制到idf的components文件夹下
+如果遇到编译不通过，根据编译器的提示更改相应的部分即可
+### lvgl 初始化
+#### 首先通过menuconfig配置lvgl  
+- 注意配置屏幕的大小，spi的针脚等   
+- 在components/lvgl_esp32_drivers/lvgl_tft/st7785s.h中配置屏幕大小
+（根据具体显示控制器的型号配置）
+#### lvgl初始化
+```c
+lv_init(); // 初始化lvgl
+lvgl_driver_init(); // 初始化lvgl驱动
+```
+创建缓冲区
+```c
+lv_color_t *buf1 = heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), (1 << 3));// 创建缓冲区
+assert(buf1 != NULL);
+memset(buf1, 0, DISP_BUF_SIZE * sizeof(lv_color_t)); // 初始化缓冲区
+lv_disp_buf_t disp_buf;
+lv_disp_buf_init(&disp_buf, buf1, NULL, DISP_BUF_SIZE); // 初始化disp_buf
+```
+配置驱动
+```c
+lv_disp_drv_t disp_drv;
+lv_disp_drv_init(&disp_drv);
+disp_drv.flush_cb = disp_driver_flush; // 设置刷新函数
+disp_drv.buffer = &disp_buf;
+lv_disp_drv_register(&disp_drv); // 注册驱动
+```
+创建屏幕，创建label
+```c
+lv_obj_t *scr = lv_disp_get_scr_act(NULL); // 获取屏幕
+assert(scr != NULL);
+lv_obj_t *label = lv_label_create(scr, NULL); // 创建label
+lv_label_set_text(label, "Hello World!");
+lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0); // 设置label位置
+```
+定时调用lvgl的tick函数，更新界面
+```c
+static void lv_tick_task(void *arg)
+{
+    (void)arg;
+    lv_tick_inc(portTICK_RATE_MS);
+}
+const esp_timer_create_args_t periodic_timer_args = {
+    .callback = &lv_tick_task,
+    .name = "periodic_gui"};
+esp_timer_handle_t periodic_timer;
+ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
+ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, portTICK_PERIOD_MS * 1000));
+```
